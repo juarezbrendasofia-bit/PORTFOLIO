@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juarez Brenda · Desarrolladora Frontend</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar navbar-expand-sm fixed-top navbar-custom">
+  <div class="container">
+    <a class="navbar-brand" href="#top">Brenda<span class="accent">.</span>Juarez</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologías</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        <li class="nav-item ms-3 ms-lg-2">
+          <a class="btn btn-sm btn-success" href="assets/cv.pdf" download>Descargar CV</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="top">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="row align-items-center min-vh-100 py-5">
+      <div class="col-lg-6 order-2 order-lg-1 mt-4">
+        <h1 class="hero-title">Hola, soy <span class="accent">Brenda Juarez</span></h1>
+        <p class="hero-subtitle">Desarrolladora Web Frontend en formación</p>
+        <p class="hero-desc">
+          Me apasiona crear interfaces web atractivas y funcionales. Actualmente
+          estoy aprendiendo desarrollo web y trabajando en proyectos personales
+          para mejorar mis habilidades.
+        </p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="#proyectos" class="btn btn-success">Ver proyectos <i class="bi bi-arrow-down-right"></i></a>
+          <a href="#contacto" class="btn btn-outline-success">Contactame</a>
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 text-center">
+        <img src="assets/ft-bren.jpeg" alt="Brenda Juarez" class="img-fluid hero-image border border-3 border-success rounded-circle shadow-lg">
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+<section id="sobre-mi" class="section">
+  <div class="container">
+    <h2 class="section-title">Sobre mí</h2>
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-7">
+        <p class="lead">
+          Actualmente me encuentro aprendiendo desarrollo web. He trabajado con
+          <strong>HTML</strong>, <strong>CSS</strong> y he empezado con  <strong>Bootstrap</strong>,
+          construyendo interfaces responsivas y bien estructuradas. Continúo
+          ampliando mis conocimientos en otras tecnologías con el
+          objetivo de convertirme en desarrolladora Full Stack.
+        </p>
+        <p class="text-muted">
+          Creo en el código limpio y en aprender
+          construyendo proyectos reales, uno a la vez.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tecnologias" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Tecnologías</h2>
+    <div class="row g-4 mt-2">
+      <div class="col-6 col-md-3">
+        <div class="skill-card">
+          <i class="bi bi-filetype-html skill-icon"></i>
+          <h3 class="skill-name">HTML5</h3>
+          <div class="progress skill-progress">
+            <div class="progress-bar" style="width:90%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 ms-md-auto">
+        <div class="skill-card">
+          <i class="bi bi-filetype-css skill-icon"></i>
+          <h3 class="skill-name">CSS3</h3>
+          <div class="progress skill-progress">
+            <div class="progress-bar" style="width:50%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-3 ms-md-auto">
+        <div class="skill-card">
+          <i class="bi bi-bootstrap-fill skill-icon"></i>
+          <h3 class="skill-name">Bootstrap</h3>
+          <div class="progress skill-progress">
+            <div class="progress-bar" style="width:20%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos" class="section">
+  <div class="container">
+    <h2 class="section-title">Proyecto</h2>
+
+    <div class="row g-4 mt-2">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-thumb thumb-1"><i class="bi bi-music-note-beamed"></i></div>
+          <div class="project-body">
+            <h3 class="project-title">Página de un Cantante</h3>
+            <p class="project-desc">Landing page en progreso de un artista musical con biografía, discografía y sección de contacto.</p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-sm btn-outline-success">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="formacion" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Educación</h2>
+
+    <div class="timeline mt-4">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Curso de Bootstrap</h3>
+          <p>Componentes, sistema de grid y diseño responsivo con el framework.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Curso de HTML y CSS</h3>
+          <p>Fundamentos de estructura semántica y estilos en la web.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="section">
+  <div class="container">
+    <h2 class="section-title">Contacto</h2>
+    <p class="text-muted mb-5" style="max-width: 560px;">
+      ¿Tienes un proyecto en mente o quieres compartir ideas? Escríbeme por cualquiera
+      de estos medios.
+    </p>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <a href="mailto:juarezbrendasofia@gmail.com" class="contact-card">
+          <i class="bi bi-envelope-fill"></i>
+          <span>juarezbrendasofia@gmail.com</span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://github.com/juarezbrendasofia-bit" target="_blank" class="contact-card">
+          <i class="bi bi-github"></i>
+          <span>github.com/juarezbrendasofia</span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="https://www.instagram.com/jrz.dev/" target="_blank" class="contact-card">
+          <i class="bi bi-instagram"></i>
+          <span>instagram.com/juarezbrendasofia</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+    <p class="mb-0">© 2026 Juarez Breanda</p>
+    <p class="mb-0 text-muted-footer">Desarrollado con HTML, CSS y Bootstrap.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
