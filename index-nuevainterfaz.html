@@ -1,0 +1,505 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="es" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary": "#4d6453",
+          "on-surface-variant": "#424845",
+          "tertiary-fixed": "#6ffbbe",
+          "inverse-primary": "#b1cdc1",
+          "outline": "#727975",
+          "surface": "#faf9f5",
+          "on-primary": "#ffffff",
+          "on-tertiary-container": "#00ad78",
+          "surface-tint": "#4a645a",
+          "on-primary-fixed-variant": "#334c43",
+          "on-error-container": "#93000a",
+          "on-secondary": "#ffffff",
+          "on-tertiary-fixed-variant": "#005236",
+          "on-error": "#ffffff",
+          "on-secondary-fixed": "#0a2013",
+          "on-surface": "#1b1c1a",
+          "secondary-container": "#cfe9d4",
+          "primary-container": "#1c352d",
+          "surface-container-high": "#e9e8e4",
+          "primary-fixed": "#cce9dd",
+          "inverse-on-surface": "#f2f1ed",
+          "on-background": "#1b1c1a",
+          "on-tertiary": "#ffffff",
+          "tertiary-container": "#003824",
+          "surface-container-highest": "#e3e2df",
+          "tertiary": "#002113",
+          "primary-fixed-dim": "#b1cdc1",
+          "surface-container-lowest": "#ffffff",
+          "secondary-fixed-dim": "#b3cdb9",
+          "on-secondary-fixed-variant": "#364c3c",
+          "on-primary-fixed": "#062019",
+          "on-secondary-container": "#536a59",
+          "surface-dim": "#dbdad6",
+          "tertiary-fixed-dim": "#4edea3",
+          "error": "#ba1a1a",
+          "outline-variant": "#c2c8c4",
+          "surface-container": "#efeeea",
+          "surface-bright": "#faf9f5",
+          "inverse-surface": "#2f312e",
+          "secondary-fixed": "#cfe9d4",
+          "error-container": "#ffdad6",
+          "background": "#faf9f5",
+          "surface-variant": "#e3e2df",
+          "primary": "#062019",
+          "on-tertiary-fixed": "#002113",
+          "surface-container-low": "#f4f4f0",
+          "on-primary-container": "#839e93"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin-md": "3rem",
+          "space-xs": "0.375rem",
+          "gutter-lg": "2.5rem",
+          "margin-lg": "5rem",
+          "space-md": "1.25rem",
+          "gutter": "1.5rem",
+          "space-xl": "3.5rem",
+          "space-lg": "2rem",
+          "space-sm": "0.75rem",
+          "margin": "1.5rem"
+        },
+        "fontFamily": {
+          "body-sm": ["Plus Jakarta Sans"],
+          "headline-lg-mobile": ["Plus Jakarta Sans"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "body-md": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "headline-accent": ["Newsreader"],
+          "display-hero": ["Plus Jakarta Sans"],
+          "label-md": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "display-hero-mobile": ["Plus Jakarta Sans"],
+          "headline-accent-mobile": ["Newsreader"]
+        },
+        "fontSize": {
+          "body-sm": ["0.875rem", {"lineHeight": "1.45", "fontWeight": "400"}],
+          "headline-lg-mobile": ["1.875rem", {"lineHeight": "1.25", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+          "headline-lg": ["2.5rem", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+          "body-md": ["1rem", {"lineHeight": "1.5", "fontWeight": "400"}],
+          "body-lg": ["1.125rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+          "headline-accent": ["2.25rem", {"lineHeight": "1.25", "fontWeight": "400"}],
+          "display-hero": ["4.5rem", {"lineHeight": "1.05", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+          "label-md": ["0.875rem", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "label-sm": ["0.75rem", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+          "headline-md": ["1.5rem", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "display-hero-mobile": ["2.75rem", {"lineHeight": "1.1", "letterSpacing": "-0.025em", "fontWeight": "700"}],
+          "headline-accent-mobile": ["1.75rem", {"lineHeight": "1.3", "fontWeight": "400"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(28,53,45,0.05)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between"><a class="flex items-center gap-space-xs group" href="#"><span class="font-headline-accent text-headline-accent italic text-primary group-hover:text-primary-container transition-colors">Brenda</span><span class="w-1.5 h-1.5 rounded-full bg-secondary mb-1"></span></a><nav class="hidden md:flex items-center gap-space-md" data-active-classes="bg-secondary-container text-on-secondary-container font-medium rounded-lg"><a class="font-label-md text-label-md px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="portfolio#sobre-mi" href="#sobre-mi">Sobre Mí</a><a class="font-label-md text-label-md px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="portfolio#stack" href="#stack">Stack</a><a class="font-label-md text-label-md px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="portfolio#proyectos" href="#proyectos">Proyectos</a><a class="font-label-md text-label-md px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="portfolio#contacto" href="#contacto">Contacto</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center justify-center font-label-md text-label-md bg-primary text-on-primary px-space-md py-space-sm rounded-lg hover:bg-primary-container transition-colors focus:outline-none" href="#contacto">Hablemos</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Status ticker banner -->
+<div class="w-full bg-secondary-container/40 py-2.5 px-6">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container tracking-wider uppercase">Disponible para pasantías, proyectos junior y colaboraciones</span>
+</div>
+<div class="hidden sm:flex items-center gap-4 text-on-surface-variant font-label-sm text-label-sm">
+
+<span class="">•</span>
+<span class="">HTML • CSS • JS</span>
+</div>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="relative w-full max-w-7xl mx-auto px-6 lg:px-12 pt-12 pb-24 md:pt-20 md:pb-32">
+<!-- Ambient subtle glow behind hero -->
+<div class="absolute top-10 left-1/3 w-96 h-96 rounded-full bg-secondary-container/30 blur-3xl -z-10 pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Text Col -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-6">
+<span class="material-symbols-outlined text-[16px] text-secondary">terminal</span>
+<span class="">Portafolio Digital • 2025</span>
+</div>
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-primary mb-4 tracking-tight">
+          Hola, soy <span class="font-headline-accent text-headline-accent-mobile md:text-headline-accent italic font-normal text-secondary block sm:inline">Brenda</span>
+</h1>
+<p class="font-headline-md text-headline-md text-on-surface-variant mb-6 font-normal">
+<span class="font-headline-accent italic text-primary">Desarrolladora Web</span> en formación activa.
+        </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10 leading-relaxed">Estudiante de programación enfocada en maquetación web limpia, responsive y funcional con <strong class="">HTML5</strong>, <strong class="">CSS3</strong>, <strong class="">JavaScript</strong> y <strong class="">Bootstrap</strong>.</p>
+<div class="flex flex-wrap items-center gap-4 w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-6 py-3.5 rounded-lg shadow-sm hover:bg-primary-container transition-all" href="#proyectos">
+<span class="">Ver mis proyectos</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-surface-container text-primary font-label-md text-label-md px-6 py-3.5 rounded-lg hover:bg-surface-container-high transition-colors" href="#contacto">
+<span class="">Contactar</span>
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</a>
+</div>
+<!-- Quick metadata metrics -->
+
+</div>
+<!-- Avatar / Portrait Box (Explicitly styled placeholder per prompt instructions) -->
+<div class="lg:col-span-5 flex justify-center lg:justify-end">
+<div class="relative w-full max-w-md aspect-[4/5] rounded-xl bg-surface-container-low p-4 shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant px-2 pt-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Foto de Perfil</span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+</div>
+<!-- Centered Placeholder Prompt Area -->
+<div class="h-full my-4 rounded-lg bg-surface-container flex flex-col items-center justify-center p-6 text-center shadow-inner group">
+<div class="w-20 h-20 rounded-full bg-secondary-container/60 text-secondary flex items-center justify-center mb-4 transition-transform group-hover:scale-105">
+<span class="material-symbols-outlined text-[36px]">account_circle</span>
+</div>
+<p class="font-label-md text-label-md text-primary font-semibold mb-2">
+              [Espacio para tu foto de perfil o avatar - Brenda]
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+              Reemplaza este recuadro con tu fotografía personal, retrato profesional o ilustración de avatar.
+            </p>
+<div class="mt-4 px-3 py-1 rounded bg-surface font-label-sm text-label-sm text-outline">
+              Formato recomendado: 800 × 1000 px
+            </div>
+</div>
+<div class="flex items-center justify-between px-2 pb-2">
+<div class="flex items-center gap-2">
+<span class="font-headline-accent text-headline-accent-mobile italic text-primary">Brenda</span>
+<span class="text-outline text-body-sm">• Estudiante</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sobre Mí (About Me) -->
+<section class="w-full bg-surface-container-low py-24 scroll-mt-20" id="sobre-mi">
+<div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center"><div class="lg:col-span-5 flex flex-col"><div class="flex items-center gap-2 mb-3"><span class="w-6 h-[2px] bg-secondary"></span><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Perfil • Trayectoria</span></div><h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight mb-4">De la precisión al <span class="font-headline-accent italic font-normal text-secondary">código web</span></h2><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Con experiencia previa en estética y peluquería, aplico la misma atención al detalle y prolijidad en cada proyecto de maquetación web.</p></div><div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-4"><div class="p-6 rounded-xl bg-surface shadow-sm flex flex-col items-start"><div class="w-10 h-10 rounded-lg bg-secondary-container/50 text-secondary flex items-center justify-center mb-3"><span class="material-symbols-outlined text-[20px]">code</span></div><h3 class="font-label-md text-label-md text-primary font-bold mb-1">Código Limpio</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Estructura semántica, ordenada y mantenible.</p></div><div class="p-6 rounded-xl bg-surface shadow-sm flex flex-col items-start"><div class="w-10 h-10 rounded-lg bg-secondary-container/50 text-secondary flex items-center justify-center mb-3"><span class="material-symbols-outlined text-[20px]">devices</span></div><h3 class="font-label-md text-label-md text-primary font-bold mb-1">Diseño Responsive</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Interfaces que se adaptan con fluidez a cualquier pantalla.</p></div><div class="p-6 rounded-xl bg-surface shadow-sm flex flex-col items-start"><div class="w-10 h-10 rounded-lg bg-secondary-container/50 text-secondary flex items-center justify-center mb-3"><span class="material-symbols-outlined text-[20px]">psychology</span></div><h3 class="font-label-md text-label-md text-primary font-bold mb-1">Constancia</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Aprendizaje diario e incorporación activa de nuevas herramientas.</p></div></div></div></div>
+</section>
+<!-- Stack & Herramientas -->
+<section class="w-full py-24 scroll-mt-20" id="stack">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="w-6 h-[2px] bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Tecnologías en Uso</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight">
+            Stack técnico • <span class="font-headline-accent italic font-normal text-secondary">Herramientas</span>
+</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Conocimientos adquiridos con práctica continua, proyectos propios y documentación oficial.
+        </p>
+</div>
+<!-- Skills Bento Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"><div class="p-6 rounded-xl bg-surface-container shadow-sm flex flex-col justify-between hover:bg-surface-container-high transition-all"><div><div class="w-12 h-12 rounded-lg bg-primary text-on-primary flex items-center justify-center mb-4"><span class="material-symbols-outlined text-[26px]">html</span></div><h3 class="font-headline-md text-headline-md text-primary font-bold mb-1">HTML5</h3><p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">Estructuración semántica, accesibilidad y buenas prácticas web.</p></div><div class="flex flex-wrap gap-1.5"><span class="px-2.5 py-1 rounded bg-surface font-label-sm text-label-sm text-primary">Semántica</span><span class="px-2.5 py-1 rounded bg-surface font-label-sm text-label-sm text-primary">Accesibilidad</span></div></div><div class="p-6 rounded-xl bg-surface-container shadow-sm flex flex-col justify-between hover:bg-surface-container-high transition-all"><div><div class="w-12 h-12 rounded-lg bg-primary text-on-primary flex items-center justify-center mb-4"><span class="material-symbols-outlined text-[26px]">css</span></div><h3 class="font-headline-md text-headline-md text-primary font-bold mb-1">CSS3</h3><p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">Flexbox, Grid, selectores modernos y estilos adaptables.</p></div><div class="flex flex-wrap gap-1.5"><span class="px-2.5 py-1 rounded bg-surface font-label-sm text-label-sm text-primary">Flexbox</span><span class="px-2.5 py-1 rounded bg-surface font-label-sm text-label-sm text-primary">CSS Grid</span></div></div><div class="p-6 rounded-xl bg-surface-container shadow-sm flex flex-col justify-between hover:bg-surface-container-high transition-all"><div><div class="w-12 h-12 rounded-lg bg-primary text-on-primary flex items-center justify-center mb-4"><span class="material-symbols-outlined text-[26px]">javascript</span></div><h3 class="font-headline-md text-headline-md text-primary font-bold mb-1">JavaScript</h3><p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">Lógica básica, interacción con el DOM, eventos y funciones.</p></div><div class="flex flex-wrap gap-1.5"></div></div><div class="p-6 rounded-xl bg-surface-container shadow-sm flex flex-col justify-between hover:bg-surface-container-high transition-all"><div><div class="w-12 h-12 rounded-lg bg-primary text-on-primary flex items-center justify-center mb-4"><span class="material-symbols-outlined text-[26px]">grid_view</span></div><h3 class="font-headline-md text-headline-md text-primary font-bold mb-1">Bootstrap</h3><p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">Sistema de grillas responsive, utilidades rápidas y componentes UI.</p></div><div class="flex flex-wrap gap-1.5"><span class="px-2.5 py-1 rounded bg-surface font-label-sm text-label-sm text-primary">Grillas</span></div></div></div>
+<!-- Roadmap / Current Study Focus Bar -->
+
+</div>
+</section>
+<!-- Mis Proyectos -->
+<section class="w-full bg-surface-container-low py-24 scroll-mt-20" id="proyectos">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="max-w-3xl mb-16">
+<div class="flex items-center gap-2 mb-3">
+<span class="w-6 h-[2px] bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Trabajo Seleccionado</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight mb-4">
+          Proyectos desarrollados • <span class="font-headline-accent italic font-normal text-secondary">Maquetación real</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Ejercicios prácticos creados desde cero, aplicando principios de diseño responsive, accesibilidad semántica y resolución visual adaptada a cada necesidad.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+<!-- Project 1: Peluquería -->
+<div class="flex flex-col rounded-xl bg-surface overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<!-- Styled Image Placeholder Area (Strictly labeled per prompt instructions, no AI image) -->
+<div class="relative w-full aspect-video bg-surface-container p-6 flex flex-col items-center justify-center text-center group">
+<div class="w-16 h-16 rounded-full bg-secondary-container/50 text-secondary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[32px]">spa</span>
+</div>
+<p class="font-label-md text-label-md text-primary font-semibold mb-1">
+              [Agrega aquí la captura de tu proyecto]
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+              Captura de pantalla de la landing page del emprendimiento de peluquería • Vista de catálogo y botón de reservas.
+            </p>
+<span class="mt-3 px-3 py-1 rounded bg-surface-container-high font-label-sm text-label-sm text-outline">
+              Proyecto #01 • Emprendimiento
+            </span>
+</div>
+<!-- Project Details -->
+<div class="p-8 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">HTML5</span>
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">CSS3</span>
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Responsive Design</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">WhatsApp API</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold mb-3">
+                Página Web para Emprendimiento de Peluquería
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                Sitio web desarrollado para digitalizar los servicios de peluquería y estética. Incluye presentación de identidad, catálogo interactivo de cortes y tratamientos, tabla de precios estilizada y llamado a la acción directo con redirección a reservas personalizadas por WhatsApp.
+              </p>
+</div>
+<!-- Action Link Buttons Placeholders -->
+<div class="flex flex-wrap items-center gap-3 pt-4 border-t-0">
+<a class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-4 py-2.5 rounded-lg hover:bg-primary-container transition-colors" href="#contacto">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span class="">[Ver Demo]</span>
+</a>
+<a class="inline-flex items-center gap-2 bg-surface-container text-primary font-label-md text-label-md px-4 py-2.5 rounded-lg hover:bg-surface-container-high transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">code</span>
+<span class="">[Ver Código en GitHub]</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 2: Cantante / Fan Page -->
+<div class="flex flex-col rounded-xl bg-surface overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<!-- Styled Image Placeholder Area (Strictly labeled per prompt instructions, no AI image) -->
+<div class="relative w-full aspect-video bg-surface-container p-6 flex flex-col items-center justify-center text-center group">
+<div class="w-16 h-16 rounded-full bg-secondary-container/50 text-secondary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[32px]">album</span>
+</div>
+<p class="font-label-md text-label-md text-primary font-semibold mb-1">
+              [Agrega aquí la captura de tu proyecto]
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+              Captura de pantalla de la fan page musical • Vista de discografía con CSS Grid y reproductor multimedia estilizado.
+            </p>
+<span class="mt-3 px-3 py-1 rounded bg-surface-container-high font-label-sm text-label-sm text-outline">
+              Proyecto #02 • Tributo Musical
+            </span>
+</div>
+<!-- Project Details -->
+<div class="p-8 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">HTML5</span>
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">CSS3 Grid</span>
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Flexbox</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">JS Básico</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold mb-3">
+                Página Biografía de Cantante / Fan Page
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                Sitio tributo dedicado a un artista musical favorito. Presenta una cronología biográfica, una grilla visual con su discografía completa, reproductores de audio embebidos y una galería interactiva maquetada con CSS Grid con animaciones suaves de entrada.
+              </p>
+</div>
+<!-- Action Link Buttons Placeholders -->
+<div class="flex flex-wrap items-center gap-3 pt-4">
+<a class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-4 py-2.5 rounded-lg hover:bg-primary-container transition-colors" href="#contacto">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span class="">[Ver Demo]</span>
+</a>
+<a class="inline-flex items-center gap-2 bg-surface-container text-primary font-label-md text-label-md px-4 py-2.5 rounded-lg hover:bg-surface-container-high transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">code</span>
+<span class="">[Código en GitHub]</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Optional Project 3 Placeholder Card (Requested) -->
+
+</div>
+</section>
+<!-- Redes Sociales & Conexión Directa -->
+<section class="w-full py-16 bg-primary text-on-primary">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex flex-col text-center md:text-left">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-inverse-primary mb-1">Conectemos en redes</span>
+
+
+</div>
+<!-- Social placeholders grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full md:w-auto">
+<!-- Instagram -->
+<a class="p-4 rounded-xl bg-primary-container text-on-primary hover:bg-on-primary-fixed-variant transition-colors flex flex-col items-center text-center group" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[28px] mb-2 text-inverse-primary group-hover:scale-110 transition-transform">photo_camera</span>
+<span class="font-label-md text-label-md font-semibold">Instagram</span>
+<span class="font-label-sm text-label-sm text-on-primary-container mt-1">[@tu_usuario]</span>
+</a>
+<!-- WhatsApp -->
+<a class="p-4 rounded-xl bg-primary-container text-on-primary hover:bg-on-primary-fixed-variant transition-colors flex flex-col items-center text-center group" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[28px] mb-2 text-inverse-primary group-hover:scale-110 transition-transform">chat</span>
+<span class="font-label-md text-label-md font-semibold">WhatsApp</span>
+<span class="font-label-sm text-label-sm text-on-primary-container mt-1">[+XX XXXX-XXXX]</span>
+</a>
+<!-- GitHub -->
+<a class="p-4 rounded-xl bg-primary-container text-on-primary hover:bg-on-primary-fixed-variant transition-colors flex flex-col items-center text-center group" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[28px] mb-2 text-inverse-primary group-hover:scale-110 transition-transform">code</span>
+<span class="font-label-md text-label-md font-semibold">GitHub</span>
+<span class="font-label-sm text-label-sm text-on-primary-container mt-1">[@tu_github]</span>
+</a>
+<!-- Gmail -->
+<a class="p-4 rounded-xl bg-primary-container text-on-primary hover:bg-on-primary-fixed-variant transition-colors flex flex-col items-center text-center group" href="mailto:tuemail@gmail.com">
+<span class="material-symbols-outlined text-[28px] mb-2 text-inverse-primary group-hover:scale-110 transition-transform">mail</span>
+<span class="font-label-md text-label-md font-semibold">Gmail</span>
+<span class="font-label-sm text-label-sm text-on-primary-container mt-1">[tuemail@gmail.com]</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Formulario de Contacto Funcional & Tarjetas Rápidas -->
+<section class="w-full py-24 scroll-mt-20" id="contacto">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+<!-- Left Column: Info & Direct Quick Cards -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="flex items-center gap-2 mb-3">
+<span class="w-6 h-[2px] bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Escríbeme</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary tracking-tight mb-4">
+            ¿Tenés una idea o <span class="font-headline-accent italic font-normal text-secondary">puesto junior?</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">Disponible para oportunidades de formación y nuevos proyectos. Podés escribirme mediante el formulario o por mis vías directas.</p>
+<!-- Direct cards -->
+<div class="flex flex-col gap-4">
+<!-- Mailto Card -->
+<a class="p-5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between group" href="mailto:brenda@ejemplo.com">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-secondary-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">alternate_email</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Correo Directo</span>
+<span class="font-label-md text-label-md text-primary font-bold">brenda.dev@ejemplo.com</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+<!-- WhatsApp Direct Card -->
+<a class="p-5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between group" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-secondary-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Mensaje Instantáneo</span>
+<span class="font-label-md text-label-md text-primary font-bold">Enviar WhatsApp (+54 ...)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+<!-- Location Card -->
+
+</div>
+</div>
+<!-- Right Column: Interactive Contact Form -->
+<div class="lg:col-span-7">
+<div class="p-8 sm:p-10 rounded-2xl bg-surface-container-low shadow-sm">
+<h3 class="font-headline-md text-headline-md text-primary font-bold mb-2">
+              Enviame un mensaje
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+              Completá los campos a continuación y te responderé a la brevedad.
+            </p>
+<!-- Success notification box (initially hidden) -->
+<div class="hidden mb-6 p-4 rounded-lg bg-secondary-container text-on-secondary-container flex items-start gap-3" id="form-success-banner">
+<span class="material-symbols-outlined text-secondary text-[24px]">check_circle</span>
+<div>
+<h4 class="font-label-md text-label-md font-bold mb-0.5">¡Mensaje enviado con éxito!</h4>
+<p class="font-body-sm text-body-sm">Gracias por contactarme, Brenda revisará tu consulta muy pronto.</p>
+</div>
+</div>
+<form class="flex flex-col gap-5" id="portfolio-contact-form" onsubmit="handleContactSubmit(event)">
+<!-- Nombre Completo -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm font-semibold text-primary" for="input-nombre">
+                  Nombre completo <span class="text-error">*</span>
+</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface text-primary placeholder-on-surface-variant/50 focus:bg-surface focus:outline-none focus:ring-2 focus:ring-secondary transition-all font-body-sm text-body-sm" id="input-nombre" placeholder="Ej. Martín Pérez" required="" type="text">
+</div>
+<!-- Correo Electrónico -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm font-semibold text-primary" for="input-email">
+                  Correo electrónico (Gmail u otro) <span class="text-error">*</span>
+</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface text-primary placeholder-on-surface-variant/50 focus:bg-surface focus:outline-none focus:ring-2 focus:ring-secondary transition-all font-body-sm text-body-sm" id="input-email" placeholder="tucorreo@gmail.com" required="" type="email">
+</div>
+<!-- Asunto -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm font-semibold text-primary" for="input-asunto">
+                  Asunto <span class="text-error">*</span>
+</label>
+<select class="w-full px-4 py-3 rounded-lg bg-surface text-primary focus:bg-surface focus:outline-none focus:ring-2 focus:ring-secondary transition-all font-body-sm text-body-sm" id="input-asunto" required="">
+<option disabled="" selected="" value="">Selecciona un motivo</option>
+<option value="oportunidad">Oportunidad laboral / Pasantía</option>
+<option value="freelance">Proyecto Web Freelance</option>
+<option value="consulta">Consulta sobre proyectos</option>
+<option value="otro">Saludar / Networking</option>
+</select>
+</div>
+<!-- Mensaje -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm font-semibold text-primary" for="input-mensaje">
+                  Mensaje <span class="text-error">*</span>
+</label>
+<textarea class="w-full px-4 py-3 rounded-lg bg-surface text-primary placeholder-on-surface-variant/50 focus:bg-surface focus:outline-none focus:ring-2 focus:ring-secondary transition-all font-body-sm text-body-sm resize-none" id="input-mensaje" placeholder="Hola Brenda, vi tus proyectos de maquetación y me gustaría hablar sobre..." required="" rows="4"></textarea>
+</div>
+<!-- Submit button -->
+<div class="pt-2">
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-8 py-3.5 rounded-lg shadow-sm hover:bg-primary-container transition-all" id="submit-button" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span class="">Enviar mensaje</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive script for client-side feedback -->
+<script>
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      var button = document.getElementById('submit-button');
+      var banner = document.getElementById('form-success-banner');
+      var form = document.getElementById('portfolio-contact-form');
+
+      // Visual sending state
+      button.disabled = true;
+      button.innerHTML = '<span class="material-symbols-outlined animate-spin text-[18px]">progress_activity</span><span>Enviando...</span>';
+
+      setTimeout(function() {
+        button.disabled = false;
+        button.innerHTML = '<span class="material-symbols-outlined text-[18px]">send</span><span>Enviar mensaje</span>';
+        banner.classList.remove('hidden');
+        form.reset();
+
+        // Smooth scroll to notification if needed
+        banner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+        // Auto-hide banner after 8 seconds
+        setTimeout(function() {
+          banner.classList.add('hidden');
+        }, 8000);
+      }, 700);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_8px_rgba(28,53,45,0.03)]"><div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-xl"><div class="flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col items-center md:items-start gap-space-xs"><span class="font-headline-accent text-headline-accent-mobile italic text-primary">Brenda</span><p class="font-body-sm text-body-sm text-on-surface-variant">Estudiante de Desarrollo Web • Creando interfaces artesanales y experiencias limpias.</p></div><div class="flex items-center gap-space-lg"><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 font-label-sm text-label-sm" href="https://github.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">code</span><span class="">GitHub</span></a><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 font-label-sm text-label-sm" href="mailto:brenda@example.com"><span class="material-symbols-outlined text-[18px]">mail</span><span class="">Gmail</span></a><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 font-label-sm text-label-sm" href="https://instagram.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">photo_camera</span><span class="">Instagram</span></a><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 font-label-sm text-label-sm" href="https://wa.me/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span class="">WhatsApp</span></a></div></div><div class="mt-space-xl pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-sm text-label-sm"><p class="">© 2025 Brenda. Todos los derechos reservados.</p><p class="text-outline">Hecho con dedicación, código semántico y tonalidades botánicas.</p></div></div></footer>
+
+</body></html>
