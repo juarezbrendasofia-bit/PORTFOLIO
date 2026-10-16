@@ -542,6 +542,44 @@ img {
   list-style: none;
 }
 
+.projects-status {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid rgb(77 100 83 / 22%);
+  border-left: 0.25rem solid var(--color-secondary);
+  border-radius: var(--radius-small);
+  background: var(--color-surface);
+}
+
+.projects-status__icon {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: var(--radius-small);
+  background: rgb(207 233 212 / 65%);
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+}
+
+.projects-status__title {
+  margin: 0 0 0.2rem;
+  color: var(--color-primary);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.projects-status__description {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
 .project-card {
   display: flex;
   height: 100%;
